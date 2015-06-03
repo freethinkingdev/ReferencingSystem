@@ -1,0 +1,20 @@
+<?php
+/**
+ * User: Marcin
+ * Date: 18/11/2012
+ * Time: 15:33
+ * File name: index.php
+ */
+session_start();
+require_once("RequireOnceFile.php");
+Page::addHtmlMetadataOfHtml("Css/Css.Css");
+Page::addHeaderToThePage("This is the help page. Make use of it... :D");
+include_once "View/Shared/commonMenuV.php";
+Page::addMainBodyToThePage("<div class='main_content'>");
+
+/* HERE GOES THE MAIN PAGE ELEMENT */
+
+Page::addMainBodyToThePage("</div>");
+Page::addClearBothDiv();
+addTheJsScript();
+Page::addFooterToThePage("");
